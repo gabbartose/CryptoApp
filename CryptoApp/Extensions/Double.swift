@@ -91,7 +91,7 @@ extension Double {
     func formattedWithAbbreviations() -> String {
         let num = abs(Double(self))
         let sign = (self < 0) ? "-" : ""
-
+        
         switch num {
         case 1_000_000_000_000...:
             let formatted = num / 1_000_000_000_000
@@ -111,7 +111,7 @@ extension Double {
             return "\(sign)\(stringFormatted)K"
         case 0...:
             return self.asNumberString()
-
+            
         default:
             return "\(sign)\(self)"
         }

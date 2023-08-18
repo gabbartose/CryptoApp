@@ -27,7 +27,7 @@ struct StatisticView: View {
                 
                 Text(statisticModel.percentageChange?.asPercentString() ?? "")
                     .font(.caption)
-                .bold()
+                    .bold()
             }
             .foregroundColor((statisticModel.percentageChange ?? 0) >= 0 ? Color.theme.green : Color.theme.red)
             .opacity(statisticModel.percentageChange == nil ? 0.0 : 1.0)

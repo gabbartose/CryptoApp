@@ -13,13 +13,10 @@ extension PreviewProvider {
     }
 }
 
-
 class DeveloperPreview {
     static let instance = DeveloperPreview()
     
-    private init() {
-        
-    }
+    private init() { }
     
     let homeViewModel = HomeViewModel()
     

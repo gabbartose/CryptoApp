@@ -30,6 +30,7 @@ struct ChartView: View {
         startingDate = endingDate.addingTimeInterval(-7*24*60*60)
     }
     
+    // EXAMPLE legend:
     // screen size width: 300
     // number of data in array (count): 100
     // 300 / 100 = 3

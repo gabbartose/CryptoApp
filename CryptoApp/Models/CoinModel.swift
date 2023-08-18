@@ -13,43 +13,42 @@ import Foundation
  
  JSON response:
  {
-     "id": "bitcoin",
-     "symbol": "btc",
-     "name": "Bitcoin",
-     "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
-     "current_price": 28523,
-     "market_cap": 553854999452,
-     "market_cap_rank": 1,
-     "fully_diluted_valuation": 598937726636,
-     "total_volume": 14370395781,
-     "high_24h": 28766,
-     "low_24h": 28058,
-     "price_change_24h": 396.81,
-     "price_change_percentage_24h": 1.41084,
-     "market_cap_change_24h": 7792506764,
-     "market_cap_change_percentage_24h": 1.42704,
-     "circulating_supply": 19419306,
-     "total_supply": 21000000,
-     "max_supply": 21000000,
-     "ath": 59717,
-     "ath_change_percentage": -52.24744,
-     "ath_date": "2021-11-10T14:24:11.849Z",
-     "atl": 51.3,
-     "atl_change_percentage": 55489.08413,
-     "atl_date": "2013-07-05T00:00:00.000Z",
-     "roi": null,
-     "last_updated": "2023-07-04T04:52:58.879Z",
-     "sparkline_in_7d": {
-       "price": [
-         30285.50506407074,
-         30359.048699981748,
-        ]
-     },
-     "price_change_percentage_24h_in_currency": 1.4108374879499088
-   }
+ "id": "bitcoin",
+ "symbol": "btc",
+ "name": "Bitcoin",
+ "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+ "current_price": 28523,
+ "market_cap": 553854999452,
+ "market_cap_rank": 1,
+ "fully_diluted_valuation": 598937726636,
+ "total_volume": 14370395781,
+ "high_24h": 28766,
+ "low_24h": 28058,
+ "price_change_24h": 396.81,
+ "price_change_percentage_24h": 1.41084,
+ "market_cap_change_24h": 7792506764,
+ "market_cap_change_percentage_24h": 1.42704,
+ "circulating_supply": 19419306,
+ "total_supply": 21000000,
+ "max_supply": 21000000,
+ "ath": 59717,
+ "ath_change_percentage": -52.24744,
+ "ath_date": "2021-11-10T14:24:11.849Z",
+ "atl": 51.3,
+ "atl_change_percentage": 55489.08413,
+ "atl_date": "2013-07-05T00:00:00.000Z",
+ "roi": null,
+ "last_updated": "2023-07-04T04:52:58.879Z",
+ "sparkline_in_7d": {
+ "price": [
+ 30285.50506407074,
+ 30359.048699981748,
+ ]
+ },
+ "price_change_percentage_24h_in_currency": 1.4108374879499088
+ }
  */
 
-// Identifiable protokol da može prolazit po ForEach petlji u View-u
 struct CoinModel: Identifiable, Codable {
     let id, symbol, name: String
     let image: String

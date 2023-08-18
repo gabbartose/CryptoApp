@@ -29,11 +29,6 @@ class HomeViewModel: ObservableObject {
     }
     
     init() {
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-//            self.allCoins.append(DeveloperPreview.instance.coin)
-//            self.portfolioCoins.append(DeveloperPreview.instance.coin)
-//        }
-        
         addSubscribers()
     }
     
@@ -68,14 +63,6 @@ class HomeViewModel: ObservableObject {
                 self?.isLoading = false
             }
             .store(in: &cancellables)
-        
-        
-        // Ovako je bilo prvotno dok nismo imlementirali searchText u COMBINE smislu, otkad je ovo ispod implementirano, nema potrebe za ovim zakomentiranim
-//        coinDataService.$allCoins
-//            .sink { [weak self] returnedCoins in
-//                self?.allCoins = returnedCoins
-//            }
-//            .store(in: &cancellables)
     }
     
     func updatePortfolio(coinModel: CoinModel, amount: Double) {
@@ -111,12 +98,12 @@ class HomeViewModel: ObservableObject {
         let btcDominance = StatisticModel(title: "BTC Dominance", value: data.btcDominance)
         
         let portfolioValue =
-            portfolioCoins
-                .map({ $0.currentHoldingsValue })
-                .reduce(0, +)
+        portfolioCoins
+            .map({ $0.currentHoldingsValue })
+            .reduce(0, +)
         
         let previousValue =
-            portfolioCoins
+        portfolioCoins
             .map { coin -> Double in
                 let currentValue = coin.currentHoldingsValue
                 let percentChange = (coin.priceChangePercentage24H ?? 0) / 100
@@ -153,8 +140,8 @@ class HomeViewModel: ObservableObject {
         let lowercasedText = text.lowercased()
         return coins.filter { coin in
             return coin.name.lowercased().contains(lowercasedText) ||
-                   coin.symbol.lowercased().contains(lowercasedText) ||
-                   coin.id.lowercased().contains(lowercasedText)
+            coin.symbol.lowercased().contains(lowercasedText) ||
+            coin.id.lowercased().contains(lowercasedText)
         }
     }
     
