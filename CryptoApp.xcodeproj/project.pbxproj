@@ -31,9 +31,9 @@
 		751DE6082A57EB9A00A60F1D /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DE6072A57EB9A00A60F1D /* CoinDetailModel.swift */; };
 		751DE60A2A57F51900A60F1D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DE6092A57F51900A60F1D /* DetailViewModel.swift */; };
 		751DE60C2A57F60300A60F1D /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DE60B2A57F60300A60F1D /* CoinDetailDataService.swift */; };
+		7529306F2A960B130077D7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7529306E2A960B130077D7EB /* Assets.xcassets */; };
 		75C673012A52EAEE00648F90 /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C673002A52EAEE00648F90 /* CryptoAppApp.swift */; };
 		75C673082A52EAF000648F90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C673072A52EAF000648F90 /* Preview Assets.xcassets */; };
-		75C6730F2A52ECDB00648F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C6730E2A52ECDB00648F90 /* Assets.xcassets */; };
 		75C673122A52EEB000648F90 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C673112A52EEB000648F90 /* Color.swift */; };
 		75C673182A52F2CD00648F90 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C673172A52F2CD00648F90 /* HomeView.swift */; };
 		75C6731C2A52F4EF00648F90 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6731B2A52F4EF00648F90 /* CircleButtonView.swift */; };
@@ -75,10 +75,10 @@
 		751DE6072A57EB9A00A60F1D /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
 		751DE6092A57F51900A60F1D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		751DE60B2A57F60300A60F1D /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
+		7529306E2A960B130077D7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75C672FD2A52EAEE00648F90 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C673002A52EAEE00648F90 /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
 		75C673072A52EAF000648F90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		75C6730E2A52ECDB00648F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Resources/Assets.xcassets; sourceTree = "<group>"; };
 		75C673112A52EEB000648F90 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		75C673172A52F2CD00648F90 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		75C6731B2A52F4EF00648F90 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 				75C6732C2A540C2D00648F90 /* Services */,
 				75C673212A53DAC200648F90 /* Models */,
 				75C673132A52F27900648F90 /* Core */,
-				75C6730E2A52ECDB00648F90 /* Assets.xcassets */,
+				7529306E2A960B130077D7EB /* Assets.xcassets */,
 				75C673062A52EAF000648F90 /* Preview Content */,
 			);
 			path = CryptoApp;
@@ -422,7 +422,7 @@
 			files = (
 				75111F9B2A5BE06B0086D3A2 /* LaunchScreen.storyboard in Resources */,
 				75C673082A52EAF000648F90 /* Preview Assets.xcassets in Resources */,
-				75C6730F2A52ECDB00648F90 /* Assets.xcassets in Resources */,
+				7529306F2A960B130077D7EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
